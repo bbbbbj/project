@@ -1,0 +1,68 @@
+.box{
+	background: #aaa;
+	overflow: hidden;
+}
+.container{
+	width: 1242px;
+	height: 700px;
+	background: url(../img/game-bg.png) no-repeat;
+	margin: 20px auto;
+	border: 8px solid #fff;
+	box-shadow: 2px 3px 8px green;
+}
+#box{
+	width: 875px;
+	height: 510px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 3px green;
+	margin: 10px 0 0 20px;
+	float: left;
+	margin-top: 100px;
+}
+#mark,#speed,#high{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	margin: 10px 30px 10px;
+}
+#mark{
+	margin-top: 50px;
+}
+#box td{
+	width: 30px;
+	height: 30px;
+}
+.head{
+	background-color: red;
+	border-radius: 50%;
+}
+.black{
+	background-color: #ccc;
+	border-radius: 4px;
+}
+.white{
+	background-color: #fff;
+}
+.tip-l{
+	float: left;
+	margin: 160px 0 0 20px;
+}
+.tip-l li{
+	margin-bottom: 28px;
+	width: 112px;
+	height: 32px;
+	background: #fff27c;
+	border: 2px solid #ebdc50;
+	border-radius: 56px;
+	font-size: 28px;
+	font-weight: 500;
+	color: #fff;
+	text-shadow: 1px 1px 5px #ebdc50;
+	padding-top: 80px;
+	text-align: center;
+	line-height: 64px;
+}

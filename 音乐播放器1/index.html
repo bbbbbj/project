@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐播放器</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#btn{
+			font-family: Arial;
+			font-size: 17px;
+			padding: 12px 35px;
+			background-color: rgb(120,146,194);
+			border: 1px solid rgb(78,96,150);
+			border-radius: 16px;
+			color: rgb(255,255,255);
+			cursor: pointer;
+		}
+		#btn:hover{
+			background-color: rgb(71,110,158);
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<button id="btn" type="button">点击播放音乐</button>
+	</div>
+	<script>
+	var btn = document.getElementById('btn');
+		btn.onclick = function(){
+			go();
+		}
+	function go(){
+		var songs = [//歌曲数组
+			'audios/矜持-王菲.mp3',
+			'audios/恋人未满-S.H.E.mp3',
+			'audios/沙龙-陈奕迅.mp3'
+		];
+		//创建<audio>标签
+		function addAudio(){
+			var e = document.getElementById('audio');
+			if(e === null){
+				var e = document.createElement('audio');
+				e.setAttribute('index',0);//记录第几首歌
+				e.id = 'audio';
+				e.loop = false;//不循环
+				e.innerHTML = 'Please update your browser!!';
+				document.body.appendChild(e);
+				e.addEventListener('ended',function(){
+					go();//音频播放完触发ended事件
+				})
+			}
+			
+		}
+		
+		function cycle(){
+			var e = document.getElementById('audio');
+			if(e != null){
+				var index = parseInt(e.getAttribute('index'));
+				if(index > songs.length - 2){
+					index = 0;
+				}else{
+					index++;
+				}
+				e.setAttribute('index',index);
+			}
+			e.src = i;
+			e.play();
+		}
+		addAudio();
+		var SongIndex = parseInt(document.getElementById('audio').getAttribute('index'));
+		var i = songs[SongIndex];
+		cycle();
+	}
+	</script>
+</body>
+</html>

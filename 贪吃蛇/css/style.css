@@ -1,0 +1,84 @@
+
+
+/*index*/
+.start-box{
+	width: 887px;
+	height: 500px;
+	background: url(../img/index-bg.png) no-repeat;
+	margin: 50px auto;
+	border: 8px solid #fff;
+	box-shadow: 2px 3px 8px green;
+}
+.start-box p{
+	text-align: center;
+	width: 20%;
+	margin: 30% auto 0;
+	font-size: 20px;
+	color: #fff;
+}
+.tips{
+	float: right;
+	margin: 10px 15px 0 0;
+}
+.tips li{
+	cursor: pointer;
+	transition: all .5s;
+}
+.tips li:hover{
+	transform: scale(1.2);
+}
+.share{
+	width: 70px;
+	height: 70px;
+	margin-bottom: 25px;
+	border-radius: 40px;
+	border: 2px solid #cc7b3a;
+	box-shadow: 0 0 1px #c83415;
+	background: #c83415;
+	background: -webkit-radial-gradient(25px 25px,circle,#f47865,#c83415); 
+}
+.setting,.friend,.rank{
+	width: 70px;
+	height: 70px;
+	margin-bottom: 20px;
+	border-radius: 40px;
+	border: 2px solid #cc7b3a;
+	box-shadow: 0 0 1px #ffdc2e;
+	background: #ffdc2e;
+	background: -webkit-radial-gradient(25px 25px,circle,#f7b23b,#ffdc2e);
+}
+.username{
+	width: 350px;
+	height: 50px;
+	display: block;
+	background: #6494bc;
+	margin: 10px 0 0 30%;
+	font-size: 24px;
+	line-height: 50px;
+	border-radius: 15px;
+	text-align: center;
+	color: #fff;
+}
+.start-button{
+	width: 250px;
+	height: 70px;
+	color: #fff;
+	display: block;
+	margin: 20px 0 0 35%;
+	border-radius: 20px;
+	border: 2px solid #ffdc2e;
+	box-shadow: 0 0 2px #ffdc2e;
+	font-weight: 550;
+	text-align: center;
+	line-height: 70px;
+	background: -webkit-linear-gradient(top,#ffdc2e,#cfe486);
+}
+.start-button a{
+	color: #fff;
+	font-size: 34px;
+	transition: all .5s;
+}
+.start-button a:hover{
+	color: red;
+	font-size: 40px;
+}

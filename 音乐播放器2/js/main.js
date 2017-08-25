@@ -256,4 +256,5 @@ function init(){
     });
 
 }
+
 bindEvent(window,'load',init);
